@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenerateFactorialNumbers {
-	public static List<Integer> factorial(int n) {
+public class Question2 {
+
+	public List<Integer> factorial(int n) {
         List<Integer> factorialList = new ArrayList<Integer>();
 
         int fact = 1;
