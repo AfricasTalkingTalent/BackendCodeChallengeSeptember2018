@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class GeneratePrimeNumbers {
+public class Question1 {
 
 	/* 
    	 * A function that takes an integer n and returns a list of all prime between 0 and n.
