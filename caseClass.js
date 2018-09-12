@@ -1,6 +1,7 @@
 class Person {
   
-    constructor(age) {
+    constructor(name,age) {
+        this.name = name;
         this.age = age;
     }
 
@@ -10,14 +11,14 @@ class Person {
 
     set age(value) {
         if (value < 0) {
-          console.log("The age cannot be a negative value");
+          console.log('Hello ' + this.name + ' The age cannot be a negative value');
           return;
         }
         this._age = value;
     }
   
   }
-  let user = new Person(22);
+  let user = new Person('John',22);
   console.log(user.age); //returns 22
 
-  user = new Person(-15); // logs an error message
+  user = new Person('John',-15); // logs an error message

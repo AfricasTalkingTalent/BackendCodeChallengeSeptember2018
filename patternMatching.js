@@ -11,6 +11,7 @@ let myMatchFn = (testValue) => match(testValue, function(case_) {
 console.log(myMatchFn('Geek')); // => 'You got geek'
 console.log(myMatchFn('nerd')); // => 'You got nerd'
 console.log(myMatchFn('Galana Plaza, Kilimani!')); // => 'You got some other string a string!'
-console.log(myMatchFn(2)); // => 'You got number 2'
+console.log(myMatchFn(2)); // => 'You got an integer 2'
+console.log(myMatchFn(2.23)); // => 'You got a float 2.23'
 console.log(myMatchFn(new Date())); // => 'You got a date!'
 console.log(myMatchFn({foo: 'bar', baz: 12})); // => 'You got something else'
